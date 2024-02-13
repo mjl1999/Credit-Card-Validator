@@ -1,5 +1,5 @@
 def main():
-    card = input("Please enter your 16 digit card number (no spaces or hyphens optional): ")
+    card = input("Please enter your 16 digit card number (spaces or hyphens optional): ")
     card = card.translate(str.maketrans({" ": "", "-": ""}))
     card = check_card(card)
     validate(card)
