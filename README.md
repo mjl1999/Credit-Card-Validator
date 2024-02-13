@@ -11,4 +11,4 @@ While certainly not as difficult as my attempt at coding blackjack or making a s
 
 It also represented a milestone for me in terms of my coding skills, as I managed to get a grip on the concept of functions and starting becoming comfortable creating and organising them for specialised tasks in my program.
 
-This program was when I really knew "coding is for me"
+This program was when I really knew: "Coding is for me."
