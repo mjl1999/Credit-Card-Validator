@@ -1,7 +1,9 @@
 def main():
-    card = input("Please enter your 16 digit card number (no spaces or hyphens needed): ").replace(" ", "").replace("-", "")
+    card = input("Please enter your 16 digit card number (no spaces or hyphens optional): ")
+    card = card.translate(str.maketrans({" ": "", "-": ""}))
     card = check_card(card)
     validate(card)
+
 
 def validate(card):
     r_card = card[::-1]
@@ -12,6 +14,7 @@ def validate(card):
         print("Valid card")
     else:
         print("Invalid card")
+
 
 def sum_n1(card):
     total = 0
@@ -29,16 +32,19 @@ def sum_n2(card):
         total += num
     return total
 
+
 def check_card(card):
-    retry_attempts = 3
+    retry_attempts = 4
     while retry_attempts != 0:
         if check_digits(card) and check_length(card):
             return card
         else:
-            card = input(f"Warning {retry_attempts} retries remaining!!! Please re-enter your card details:\n")
+            card = input(f"Warning {retry_attempts - 1} retries remaining!!! Please re-enter your card details:\n")
+            card = card.translate(str.maketrans({" ": "", "-": ""}))
             retry_attempts -= 1
     print("Retry attempts exceeded. Your portal has been locked for 24 hours")
     quit()
+
 
 def check_digits(card):
     try:
