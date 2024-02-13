@@ -10,3 +10,5 @@ Originally this project forced the user to enter in the form 1234-1234-1234-1234
 While certainly not as difficult as my attempt at coding blackjack or making a simple coffee machine, it still remains my favourite. This project was the first time I ever ventured outside the comfy confines of an online tutorial and attempted to improve upon the projects I was coding. And though it was only in my own small way, I succeeded.
 
 It also represented a milestone for me in terms of my coding skills, as I managed to get a grip on the concept of functions and starting becoming comfortable creating and organising them for specialised tasks in my program.
+
+This program was when I really knew "coding is for me"
